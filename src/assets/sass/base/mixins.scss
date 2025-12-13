@@ -1,0 +1,10 @@
+@use "/src/assets/sass/base/variables.scss" as *;
+
+@mixin title{
+    color: $dark;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+}

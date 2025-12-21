@@ -13,3 +13,14 @@
         line-height: 38px;
     }
 }
+
+
+.title-h2{
+    @include title;
+    font-size: 32px;
+}
+
+.title-h3{
+    @include title;
+    font-size: 20px;
+}

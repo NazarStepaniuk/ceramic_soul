@@ -1,5 +1,7 @@
 @use "/src/assets/sass/libs/modern-normalize.min.css";
 @use "/src/assets/sass/libs/fontello.css";
+@use "/node_modules/purecss/build/grids-min.css";
+@use "/node_modules/purecss/build/grids-responsive-min.css";
 @use "/src/assets/sass/base/basic.scss";
 
 @use "/src/assets/sass/ui/titles.scss";

@@ -9,13 +9,13 @@ figure,
 p,
 ol,
 ul {
-	margin: 0;
+    margin: 0;
 }
 
 ol[role="list"],
 ul[role="list"] {
-	list-style: none;
-	padding-inline: 0;
+    list-style: none;
+    padding-inline: 0;
 }
 
 h1,
@@ -23,31 +23,32 @@ h2,
 h3,
 h4,
 h5 {
-	font-size: inherit;
-	font-weight: inherit;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 img {
-	display: block;
-	max-inline-size: 100%;
+    display: block;
+    max-inline-size: 100%;
 }
 
 html {
-	font-family: "Barlow", sans-serif;
-	scroll-behavior: smooth;
+    font-family: "Barlow", sans-serif;
+    scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: $light;
 }
 
-.container{
+.container {
+    position: relative;
     width: 100%;
     padding: 0 10px;
 }
 
 @media screen and (min-width: 768px) {
-    .container{
+    .container {
         max-width: 720px;
         padding: 0;
         margin: 0 auto;
@@ -55,13 +56,13 @@ body{
 }
 
 @media screen and (min-width: 1200px) {
-    .container{
+    .container {
         max-width: 1140px;
     }
 }
 
 @media screen and (min-width: 1920px) {
-    .container{
+    .container {
         max-width: 1440px;
     }
 }

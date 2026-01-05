@@ -1,13 +1,15 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import "./assets/sass/style.scss";
 
-import Promo from './components/promo/Promo';
-import Activities from './components/activities/Activities';
+import Promo from "./components/promo/Promo";
+import Activities from "./components/activities/Activities";
+import Touch from "./components/touch/Touch";
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
     <StrictMode>
-        <Promo/>
-        <Activities/>
+        <Promo />
+        <Activities />
+        <Touch />
     </StrictMode>
-)
+);

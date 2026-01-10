@@ -1,0 +1,87 @@
+@use "swiper/css";
+@use "swiper/css/navigation";
+@use "swiper/css/pagination";
+@use "/src/assets/sass/base/variables.scss" as *;
+
+.works {
+    padding-top: 60px;
+
+    &__slider {
+        margin-top: 40px;
+        padding-bottom: 45px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    .works__slider-nav {
+        display: none;
+    }
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: $dark;
+        border-radius: 0;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: $ceramic;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .works {
+        &__slider {
+            margin-top: 45px;
+        }
+        &__img {
+            display: block;
+            width: 400px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .works {
+        &__slider {
+            margin: 80px 40px 0 40px;
+            padding-bottom: 40px;
+        }
+        &__img {
+            width: 100%;
+            margin: 0;
+        }
+        &__wrapper {
+            position: relative;
+        }
+        .works__slider-nav {
+            position: absolute;
+            top: 40%;
+            display: block;
+            font-size: 21px;
+        }
+        .icon-left-open {
+            left: 8px;
+        }
+        .icon-right-open {
+            right: 8px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .works {
+        padding-top: 100px;
+        &__slider {
+            margin: 80px 85px 0 85px;
+        }
+        .icon-left-open {
+            left: 35px;
+        }
+        .icon-right-open {
+            right: 35px;
+        }
+    }
+}

@@ -1,45 +1,43 @@
 @use "/src/assets/sass/base/variables.scss" as *;
 
-.header{
-    &__top{
+.header {
+    &__top {
         display: flex;
         justify-content: space-between;
     }
 
-    &__logo{
+    &__logo {
         width: 100px;
         height: 100px;
     }
 
-    &__icons{
+    &__icons {
         display: flex;
         align-items: flex-start;
         gap: 15px;
-        a{
+        a {
             display: block;
             color: $dark;
-            span{
+            span {
                 display: block;
                 width: 20px;
                 height: 20px;
             }
         }
     }
-    &__nav{
+    &__nav {
         display: none;
     }
 }
 
-
-
-.burger{
+.burger {
     display: flex;
     height: 23px;
     flex-direction: column;
     row-gap: 10px;
     padding-right: 35px;
 
-    span{
+    span {
         display: block;
         width: 20px;
         height: 1px;
@@ -47,23 +45,22 @@
     }
 }
 
-
-@media screen and (min-width: 768px){
-    .header{
-        &__nav{
+@media screen and (min-width: 768px) {
+    .header {
+        &__nav {
             display: block;
             margin-top: 20px;
-            ul{
+            ul {
                 display: flex;
                 justify-content: center;
                 gap: 30px;
                 padding: 0px;
-                li{
+                li {
                     list-style-type: none;
                 }
             }
         }
-        &__link{
+        &__link {
             color: $dark;
             font-size: 20px;
             font-weight: 400;
@@ -72,19 +69,19 @@
             text-decoration: none;
         }
     }
-    .burger{
+    .burger {
         visibility: hidden;
     }
 }
 
-@media screen and (min-width: 1920px){
-    .header{
-        &__logo{
+@media screen and (min-width: 1920px) {
+    .header {
+        &__logo {
             width: 150px;
             height: 151px;
         }
-        &__nav{
-            ul{
+        &__nav {
+            ul {
                 gap: 60px;
             }
         }

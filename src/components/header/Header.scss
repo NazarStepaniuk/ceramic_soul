@@ -1,6 +1,8 @@
 @use "/src/assets/sass/base/variables.scss" as *;
 
 .header {
+    padding-top: 50px;
+    position: relative;
     &__top {
         display: flex;
         justify-content: space-between;
@@ -19,9 +21,7 @@
             display: block;
             color: $dark;
             span {
-                display: block;
-                width: 20px;
-                height: 20px;
+                font-size: 20px;
             }
         }
     }
@@ -31,6 +31,7 @@
     &__menu {
         padding: 50px 10px;
         position: fixed;
+        z-index: 100;
         left: -100vw;
         top: 0;
         width: 100vw;
@@ -125,11 +126,13 @@
 
 @media screen and (min-width: 1920px) {
     .header {
+        padding-top: 40px;
         &__logo {
             width: 150px;
             height: 151px;
         }
         &__nav {
+            margin-top: 36px;
             ul {
                 gap: 60px;
             }

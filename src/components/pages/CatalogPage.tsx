@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import Catalog from "../catalog/Catalog";
 
 const CatalogPage = () => {
     return (
@@ -10,6 +11,7 @@ const CatalogPage = () => {
                     content="Explore handcrafted ceramic vases and decor created in our pottery workshop."
                 />
             </Helmet>
+            <Catalog />
         </>
     );
 };

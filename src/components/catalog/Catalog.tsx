@@ -78,11 +78,7 @@ const Catalog = () => {
             .filter((card) => card.tab === tab)
             .map((card) => <CatalogCard key={card.id} card={card} />);
     };
-    // ПЕРЕПИСАТЬ ХЕДЕР
-    // ПЕРЕПИСАТЬ ХЕДЕР
-    // ПЕРЕПИСАТЬ ХЕДЕР
-    // ПЕРЕПИСАТЬ ХЕДЕР
-    // ПЕРЕПИСАТЬ ХЕДЕР
+
     return (
         <section className="catalog">
             <div className="container">

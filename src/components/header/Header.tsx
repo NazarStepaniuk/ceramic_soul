@@ -4,9 +4,13 @@ import "./Header.scss";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    let menuClassList = `header__menu${
-        isMenuOpen ? " header__menu_active" : ""
-    }`;
+
+    const menuItems = [
+        { path: "/catalog", label: "catalog" },
+        { path: "/blog", label: "blog" },
+        { path: "/about", label: "about" },
+    ];
+
     const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
     useEffect(() => {
@@ -33,40 +37,28 @@ const Header = () => {
 
     return (
         <header className="header">
-            <div className={menuClassList}>
+            <div
+                className={`header__menu${
+                    isMenuOpen ? " header__menu_active" : ""
+                }`}
+            >
                 <div className="header__menu-close" onClick={toggleMenu}>
                     <span></span>
                     <span></span>
                 </div>
                 <nav className="header__menu-nav">
                     <ul>
-                        <li>
-                            <Link
-                                to="/catalog"
-                                className="header__menu-link"
-                                onClick={() => setIsMenuOpen(false)}
-                            >
-                                catalog
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to="/blog"
-                                className="header__menu-link"
-                                onClick={() => setIsMenuOpen(false)}
-                            >
-                                blog
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to="/about"
-                                className="header__menu-link"
-                                onClick={() => setIsMenuOpen(false)}
-                            >
-                                about
-                            </Link>
-                        </li>
+                        {menuItems.map((item) => (
+                            <li key={item.path}>
+                                <Link
+                                    to={item.path}
+                                    className="header__menu-link"
+                                    onClick={() => setIsMenuOpen(false)}
+                                >
+                                    {item.label}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                 </nav>
             </div>
@@ -92,21 +84,13 @@ const Header = () => {
                 </div>
                 <nav className="header__nav">
                     <ul>
-                        <li>
-                            <Link to="catalog" className="header__link">
-                                catalog
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="blog" className="header__link">
-                                blog
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="about" className="header__link">
-                                about
-                            </Link>
-                        </li>
+                        {menuItems.map((item) => (
+                            <li key={item.path}>
+                                <Link to={item.path} className="header__link">
+                                    {item.label}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                 </nav>
             </div>

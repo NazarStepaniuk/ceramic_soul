@@ -24,3 +24,16 @@
     background: transparent;
     transition: 0.25s;
 }
+
+@mixin angle-decoration {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        border-top: 1px solid $dark;
+        border-left: 1px solid $dark;
+    }
+}

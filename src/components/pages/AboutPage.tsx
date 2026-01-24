@@ -1,5 +1,7 @@
 import { Helmet } from "react-helmet-async";
 
+import About from "../about/About";
+
 const AboutPage = () => {
     return (
         <>
@@ -10,6 +12,7 @@ const AboutPage = () => {
                     content="Ceramic Soul is a pottery workshop focused on handmade ceramics inspired by tradition, texture and natural forms."
                 />
             </Helmet>
+            <About />
         </>
     );
 };

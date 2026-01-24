@@ -1,6 +1,8 @@
 import { Helmet } from "react-helmet-async";
 
 import About from "../about/About";
+import Touch from "../touch/Touch";
+import FindUs from "../findUs/FindUs";
 
 const AboutPage = () => {
     return (
@@ -13,6 +15,8 @@ const AboutPage = () => {
                 />
             </Helmet>
             <About />
+            <Touch />
+            <FindUs />
         </>
     );
 };

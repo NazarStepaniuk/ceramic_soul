@@ -29,7 +29,7 @@ const Catalog = () => {
         {
             id: 2,
             src: catalogImg3,
-            name: "Earthen Gracenjoinijnoo joijiojoijojiiojoijjijoio ijoijojioijojoijio",
+            name: "Earthen Gracen",
             price: 16.99,
             tab: "for tea",
         },

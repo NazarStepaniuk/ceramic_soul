@@ -18,6 +18,13 @@
         padding: 0;
     }
 
+    &__error {
+        font-size: 11px;
+        font-weight: 400;
+        color: rgb(145, 26, 26);
+        margin: 2px 0 3px 0;
+    }
+
     &__label {
         display: block;
         font-size: 14px;
@@ -37,6 +44,9 @@
         border-radius: 2px;
         color: $dark;
         background: rgba(255, 255, 255, 1);
+        &_error {
+            border: 1px solid $ui-error;
+        }
         &:focus {
             border: none;
             outline: 1px solid $dark;
@@ -56,6 +66,9 @@
         color: $dark;
         background: rgba(255, 255, 255, 1);
         resize: none;
+        &_error {
+            border: 1px solid $ui-error;
+        }
         &:focus {
             border: none;
             outline: 1px solid $dark;

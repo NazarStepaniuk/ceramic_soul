@@ -1,6 +1,8 @@
 import "./Footer.scss";
 import { Link } from "react-router-dom";
 
+import FooterForm from "./FooterForm";
+
 const Footer = () => {
     return (
         <footer className="footer">
@@ -11,28 +13,7 @@ const Footer = () => {
                         <div className="footer__text">
                             Keep up to date with news and promotions
                         </div>
-                        <form action="#" className="footer__form">
-                            <input
-                                type="email"
-                                name="email"
-                                className="footer__input"
-                                placeholder="Enter your e-mail"
-                                required
-                            />
-                            <label
-                                className="footer__check-block"
-                                htmlFor="footer__checkbox"
-                            >
-                                <input
-                                    required
-                                    className="footer__checkbox"
-                                    type="checkbox"
-                                    id="footer__checkbox"
-                                />
-                                I agree with the <a href="#">terms</a>
-                            </label>
-                            <button className="footer__btn">submit</button>
-                        </form>
+                        <FooterForm />
                     </div>
                     <div className="footer__links">
                         <div className="footer__links-block">

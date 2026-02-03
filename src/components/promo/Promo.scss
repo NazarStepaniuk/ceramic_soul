@@ -1,3 +1,5 @@
+@use "../../assets/sass/base/animation.scss" as *;
+
 .promo {
     &__potter {
         display: none;
@@ -62,6 +64,9 @@
         }
         &__title {
             padding-left: 571px;
+        }
+        &__cta {
+            animation: SlideIn 2s;
         }
     }
 }

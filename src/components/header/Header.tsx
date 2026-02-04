@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.scss";
 
+import logoImg from "/src/assets/logo/logo.png";
+
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -71,7 +73,7 @@ const Header = () => {
                         <span></span>
                     </div>
                     <Link to="/" className="header__logo">
-                        <img src="src/assets/logo/logo.png" alt="logo" />
+                        <img src={logoImg} alt="logo" />
                     </Link>
                     <div className="header__icons">
                         <a href="#">

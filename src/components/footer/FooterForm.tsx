@@ -20,7 +20,6 @@ const FooterForm = () => {
     });
     const onSubmit: SubmitHandler<FormFields> = (data) => {
         reset();
-        console.log(data);
     };
 
     return (

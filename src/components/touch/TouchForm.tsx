@@ -22,7 +22,6 @@ const TouchForm = () => {
     });
 
     const onSubmit: SubmitHandler<FormFields> = (data) => {
-        console.log(data);
         reset();
     };
 

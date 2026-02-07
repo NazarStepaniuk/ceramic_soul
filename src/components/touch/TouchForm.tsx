@@ -21,7 +21,7 @@ const TouchForm = () => {
         resolver: zodResolver(schema),
     });
 
-    const onSubmit: SubmitHandler<FormFields> = (data) => {
+    const onSubmit: SubmitHandler<FormFields> = () => {
         reset();
     };
 

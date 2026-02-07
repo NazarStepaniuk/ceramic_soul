@@ -4,11 +4,7 @@ import viteImagemin from "vite-plugin-imagemin";
 
 export default defineConfig({
     plugins: [
-        react({
-            babel: {
-                plugins: [["babel-plugin-react-compiler"]],
-            },
-        }),
+        react(), // ⬅️ БЕЗ babel-plugin-react-compiler
         viteImagemin({
             gifsicle: {
                 optimizationLevel: 7,

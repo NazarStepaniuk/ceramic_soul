@@ -13,11 +13,13 @@ const FooterForm = () => {
     const {
         register,
         handleSubmit,
+        reset,
         formState: { errors, isSubmitting },
     } = useForm<FormFields>({
         resolver: zodResolver(schema),
     });
     const onSubmit: SubmitHandler<FormFields> = (data) => {
+        reset();
         console.log(data);
     };
 

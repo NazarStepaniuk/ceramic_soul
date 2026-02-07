@@ -15,6 +15,7 @@ const TouchForm = () => {
     const {
         register,
         handleSubmit,
+        reset,
         formState: { errors, isSubmitting },
     } = useForm<FormFields>({
         resolver: zodResolver(schema),
@@ -22,6 +23,7 @@ const TouchForm = () => {
 
     const onSubmit: SubmitHandler<FormFields> = (data) => {
         console.log(data);
+        reset();
     };
 
     return (

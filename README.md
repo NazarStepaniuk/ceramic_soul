@@ -36,6 +36,11 @@
 
 ## 📂 Installation
 
-npm install
+Clone the repository:
 
-npm run dev
+```bash
+git clone https://github.com/NazarStepaniuk/ceramic-soul.git
+cd ceramic-soul
+npm install
+npm start
+```
